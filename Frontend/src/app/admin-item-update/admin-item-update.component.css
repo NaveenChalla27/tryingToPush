@@ -1,0 +1,39 @@
+body{
+    
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: white;
+    text-align: left;
+    background-color: #f5f8fa;
+    
+}
+.bg{
+    background-image:url("http://selfawarenesshub.org/wp-content/uploads/2017/10/02-990x586.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+}
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Raleway, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}

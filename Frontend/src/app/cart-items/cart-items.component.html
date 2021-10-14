@@ -1,0 +1,55 @@
+<app-navigationbar></app-navigationbar>
+
+<div class="wrapper body bg">
+<br><br>
+<div>
+<table class="table table-striped">
+    <thead style="background-color: black; color: blanchedalmond;">
+        <tr>
+            <th>  </th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>quantity</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of  myCartItems; let index=index">
+            <td (click)="delete(1,m.itemname)"><span class="material-icons">delete_outline</span></td>
+            <td>{{m.itemname}}</td>
+            <td>{{m.itemprice}}</td>
+            <td>{{m.quantity}}</td>
+            <td>{{m.itemprice}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="custom">
+    <div class="center">
+        <div><button class="left btn btn-outline-info" style="color:rgb(156, 136, 136);background-color: white; ">Couponcode</button></div>
+        <div style="margin-right:58.5%;"><button class="left btn btn-outline-info" style="color:black;background-color:goldenrod ; ">APPLY COUPON</button></div>
+        <div><button class="btn btn-outline-info-lg right" style="color:black;background-color:goldenrod; margin-right:10px;padding: 5px 40px;">UPDATE CART</button></div>
+    </div>
+</div>
+    <br>
+    <br>
+        <table class="table table-striped end" >
+            <thead style="background-color: black; color: blanchedalmond;">
+                <tr>
+                    <th>Cart Totals  </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$ {{totalvalue}}.00</td>
+                    
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>$ {{totalvalue}}.00</td>
+                </tr>
+            </tbody>
+        </table>
+</div>

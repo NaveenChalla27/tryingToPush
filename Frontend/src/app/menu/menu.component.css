@@ -1,0 +1,50 @@
+.body {
+    height: -webkit-fill-available;
+    background:white;
+    color: black;
+    font: 14px Helvetica, sans-serif;
+  }
+  form div {
+    overflow: hidden;
+    margin: 0 0 5px 0;
+  }
+  .dec {
+    background-position: 0 -29px;
+  }
+  
+  .buttons {
+    padding: 20px 0 0 140px;
+  }
+  .custom{
+    width: 40%;
+    margin-left: 30%;
+  }
+ .center{
+   width: 100%;
+   
+   text-align: center;
+ }
+ .center div{
+   display: inline-block;
+   background-color:white;
+   margin-right: 10%;
+ }
+ .center :hover{
+   background-color: orange;
+ }
+  
+  .zoom {
+    transition: transform .2s;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5);
+  }
+  
+  p{
+    color: black;
+  }
+  
+  .input-align{
+    text-align: center;
+  }

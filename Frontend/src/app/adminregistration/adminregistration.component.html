@@ -1,0 +1,62 @@
+<div class="cotainer body bg">
+    <h2 style="text-align:center; color:crimson">FoodChain Admin Register</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header"><strong>Admin Register</strong></div>
+                            <div class="card-body">
+                                <form name="my-form"  (ngSubmit)="register()">
+                                    <div class="form-group row">
+                                        <label for="firstName" class="col-md-4 col-form-label text-md-right">FirstName</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="firstname" class="form-control" name="firstName" placeholder="FirstName" [(ngModel)]="customer.firstName">
+                                        </div>
+                                  </div>
+                                  <br>
+                                  <div class="form-group row">
+                                    <label for="LastName" class="col-md-4 col-form-label text-md-right">LastName</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="LastName" class="form-control" name="Lastname" placeholder="LastName" [(ngModel)]="customer.lastName">
+                                    </div>
+                              </div>
+                              <br>
+                              <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
+                                <div class="col-md-6">
+                                    <input type="eamil" id="email" class="form-control" name="email" placeholder="Email" [(ngModel)]="customer.emailId">
+                                </div>
+                          </div>
+                          <br>
+                              <div class="form-group row">
+                                <label for="phone_number" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="phone_number" class="form-control" placeholder="phoneNumber" [(ngModel)]="customer.phonenumber">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="col-md-6">
+                                    <input type="password" id="password" class="form-control" placeholder="password" [(ngModel)]="customer.password">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group row">
+                                <label for="address" class="col-md-4 col-form-label text-md-right">Address</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="address" class="form-control" placeholder="address" [(ngModel)]="customer.address">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary" >
+                                Register
+                                </button>
+                            </div>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>  <br>  <br>  <br>
+</div>

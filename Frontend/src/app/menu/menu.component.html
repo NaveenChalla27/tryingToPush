@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="header">
+   <app-navigationbar></app-navigationbar>
+</div>
+<div  class="body">
+  <br><br>
+  <h1 style="text-align:center">Discover Our Exclusive Menu</h1>
+    <br><br>
+    <div class="custom">
+    <div class="center">
+      <div><button class="btn" style="background-color:orange" routerLinkActive="active" >MENU</button></div>
+     <div><button class="btn ">DRINKS</button></div>
+      <div><button class="btn " ><span class="material-icons">delete_outline</span>DESERTS</button></div>
+      </div>
+    </div>
+    <br><br>
+    <form name="form" #f="ngForm" novalidate class="feedback-form">    
+        <div class="container-fluid" style="margin: 0 auto; width: 75%;">
+            <div class="row">
+              <div class="card-deck col-md-3" *ngFor="let m of itemsList; let index=index" style="padding-right: 3px">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top zoom" src="{{m.image}}" alt="image"  style="height: 190px">
+                  <div class="card-block">
+                    <div class="card-body">
+                      <h5 class="card-text" style="color:red"><strong>{{m.itemname|uppercase}}</strong></h5>
+                      <p class="card-text">Price : Rs.{{m.itemprice}}</p>
+                      <p> quantity : {{m.quantity}}</p>
+                    </div>
+                    <div>
+                      <button class="btn btn-success" (click)="addingToCart(m.id)">AddToCart</button>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button class="btn btn-info"  style="margin-left:600px;"  (click)="cart()">CartItems</button>
+</div>
+</div>

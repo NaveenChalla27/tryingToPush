@@ -1,0 +1,31 @@
+.body{
+    background-color:burlywood;
+}
+.buttons {
+    padding: 20px 0 0 140px;
+  }
+ .center div{
+    display: inline-block;
+    margin-right:1%;
+    margin-left:2%;
+  }
+  .center button:right{
+      float: right;
+  }
+  .center button:left{
+    float: left;
+}
+.end{
+    width:35%;
+    float:right;
+}
+.bar{
+    background-color:green;
+    
+}
+.bg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100%;
+}

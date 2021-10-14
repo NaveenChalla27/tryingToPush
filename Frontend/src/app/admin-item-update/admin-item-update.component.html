@@ -1,0 +1,51 @@
+<div class="cotainer body bg">
+    <h2 style="text-align:center; color:crimson">Food Chain</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header"><strong>Update Item</strong></div>
+                            <div class="card-body">
+                                <form name="my-form"  (ngSubmit)="updatingItem()">
+                                    <div class="form-group row">
+                                        <label for="itemname" class="col-md-4 col-form-label text-md-right">ItemName</label>
+                                        <div class="col-md-6">
+                                            <input type="text" id="itemname" class="form-control" name="itemname" placeholder="ItemName" [(ngModel)]="item.itemname">
+                                        </div>
+                                  </div>
+                                  <br>
+                                  <div class="form-group row">
+                                    <label for="itemprice" class="col-md-4 col-form-label text-md-right">Price</label>
+                                    <div class="col-md-6">
+                                        <input type="number" id="itemprice" class="form-control" name="itemprice" placeholder="price" [(ngModel)]="item.itemprice">
+                                    </div>
+                              </div>
+                              <br>
+                              <div class="form-group row">
+                                <label for="Quantity" class="col-md-4 col-form-label text-md-right">Quantity</label>
+                                <div class="col-md-6">
+                                    <input type="number" id="email" class="form-control" name="Quantity" placeholder="Quantity" [(ngModel)]="item.quantity">
+                                </div>
+                          </div>
+                          <br>
+                              <div class="form-group row">
+                                <label for="Image" class="col-md-4 col-form-label text-md-right">Image</label>
+                                <div class="col-md-6">
+                                    <input type="text" id="Image" class="form-control" placeholder="Image Url" [(ngModel)]="item.image">
+                                </div>
+                            </div>
+                            <br>
+                           
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-primary" >
+                                Update Item
+                                </button>
+                            </div>
+                                </form>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>  <br>  <br>  <br>
+                        <br>  <br>  <br>  <br>
+</div>
+
